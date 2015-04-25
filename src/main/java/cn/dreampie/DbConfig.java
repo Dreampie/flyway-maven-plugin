@@ -64,18 +64,18 @@ public class DbConfig {
 
 
   public boolean initOnMigrate(String dbName) {
-    return properties.getProperty("db." + dbName + ".migration.initOnMigrate", "false").equals("true");
+    return properties.getProperty("flyway." + dbName + ".migration.initOnMigrate", "false").equals("true");
   }
 
   public boolean migrateAuto(String dbName) {
-    return properties.getProperty("db." + dbName + ".migration.auto", "false").equals("true");
+    return properties.getProperty("flyway." + dbName + ".migration.auto", "false").equals("true");
   }
 
   public boolean isClean(String dbName) {
-    return properties.getProperty("db." + dbName + ".valid.clean", "false").equals("true");
+    return properties.getProperty("flyway." + dbName + ".valid.clean", "false").equals("true");
   }
 
   public boolean isDev() {
-    return properties.getProperty("devMode", "false").equals("true");
+    return properties.getProperty("flyway.devMode", "false").equals("true");
   }
 }
