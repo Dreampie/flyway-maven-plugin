@@ -26,7 +26,7 @@ flyway.default.migration.initOnMigrate=true
   <configuration>
    <!-配置文件--->
     <config>${basedir}/src/main/resources/application.properties</config>
-    <!--sql脚本目录 多个数据库 按数据源名字创建文件夹  如：db/migration/default,db/migration/demo-->
+    <!--sql脚本目录 多个数据库 按数据源名字创建文件夹  如：db/migration/default,db/migration/demo 配置只需要到migration目录-->
     <location>filesystem:${basedir}/src/main/resources/db/migration/</location>
   </configuration>
   <dependencies>
