@@ -57,7 +57,7 @@ public class DbConfig {
     Map<String, DbSource> dbSourceMap = Maps.newHashMap();
     List<String> dbNames = getAllDbNames();
     for (String dbName : dbNames) {
-      dbSourceMap.put(dbName, new DbSource(properties.getProperty("db." + dbName + ".driver"), properties.getProperty("db." + dbName + ".url"), properties.getProperty("db." + dbName + ".user"), properties.getProperty("db." + dbName + ".password")));
+      dbSourceMap.put(dbName, new DbSource(properties.getProperty("db." + dbName + ".url"), properties.getProperty("db." + dbName + ".user"), properties.getProperty("db." + dbName + ".password")));
     }
     return dbSourceMap;
   }

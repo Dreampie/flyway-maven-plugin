@@ -4,24 +4,14 @@ package cn.dreampie;
  * Created by wangrenhui on 14-5-5.
  */
 public class DbSource {
-  String driver;
   String url;
   String user;
   String password;
 
-  public DbSource(String driver, String url, String user, String password) {
-    this.driver = driver;
+  public DbSource(String url, String user, String password) {
     this.url = url;
     this.user = user;
     this.password = password;
-  }
-
-  public String getDriver() {
-    return driver;
-  }
-
-  public void setDriver(String driver) {
-    this.driver = driver;
   }
 
   public String getUrl() {
