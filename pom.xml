@@ -46,7 +46,7 @@
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
     <maven-plugin-api.version>3.2.3</maven-plugin-api.version>
     <maven-plugin-annotations.version>3.3</maven-plugin-annotations.version>
-    <flyway.version>3.0</flyway.version>
+    <flyway.version>3.2.1</flyway.version>
   </properties>
 
   <dependencies>
